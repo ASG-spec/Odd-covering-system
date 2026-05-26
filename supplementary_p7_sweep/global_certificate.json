@@ -1,0 +1,138 @@
+{
+  "title": "Global Exhaustive Certificate: Core Density Lower Bound",
+  "method": "Sum-of-Maxima (Strict Union Bound)",
+  "N": 945,
+  "fiber_period": 315,
+  "fiber_size": 3,
+  "pure_divisors": [
+    3,
+    9,
+    27,
+    5,
+    7
+  ],
+  "mixed_divisors": [
+    15,
+    21,
+    35,
+    45,
+    63,
+    105,
+    135,
+    189,
+    315,
+    945
+  ],
+  "symmetry_reduction": "Translation pivot: r_3=0 fixed, reducing 25515 -> 8505 branches",
+  "exhaustive_sweep": {
+    "total_branches_checked": 8505,
+    "time_seconds": 0.74,
+    "global_minimum_lb": 179,
+    "global_min_params": {
+      "r3": 0,
+      "r9": 1,
+      "r27": 4,
+      "r5": 0,
+      "r7": 0
+    },
+    "distribution": {
+      "179": 1260,
+      "190": 1890,
+      "202": 2520,
+      "248": 1890,
+      "271": 945
+    },
+    "union_bound_is_strict": true
+  },
+  "global_min_branch_detail": {
+    "params": {
+      "r3": 0,
+      "r9": 1,
+      "r27": 4,
+      "r5": 0,
+      "r7": 0
+    },
+    "S0_size": 336,
+    "mixed_divisor_table": [
+      {
+        "d": 15,
+        "max_cov": 54,
+        "best_r": 2
+      },
+      {
+        "d": 21,
+        "max_cov": 36,
+        "best_r": 2
+      },
+      {
+        "d": 35,
+        "max_cov": 14,
+        "best_r": 1
+      },
+      {
+        "d": 45,
+        "max_cov": 18,
+        "best_r": 2
+      },
+      {
+        "d": 63,
+        "max_cov": 12,
+        "best_r": 2
+      },
+      {
+        "d": 105,
+        "max_cov": 9,
+        "best_r": 2
+      },
+      {
+        "d": 135,
+        "max_cov": 6,
+        "best_r": 2
+      },
+      {
+        "d": 189,
+        "max_cov": 4,
+        "best_r": 2
+      },
+      {
+        "d": 315,
+        "max_cov": 3,
+        "best_r": 2
+      },
+      {
+        "d": 945,
+        "max_cov": 1,
+        "best_r": 2
+      }
+    ],
+    "sum_of_maxima": 157,
+    "lower_bound": 179
+  },
+  "thresholds": {
+    "k1": {
+      "T_k": "8/945",
+      "T_k_decimal": 0.008465608465608466,
+      "lb": 179,
+      "lb_decimal": 0.18941798941798943,
+      "proved": true,
+      "factor": 22.38
+    },
+    "k2": {
+      "T_k": "16/945",
+      "T_k_decimal": 0.016931216931216932,
+      "lb": 179,
+      "lb_decimal": 0.18941798941798943,
+      "proved": true,
+      "factor": 11.19
+    },
+    "k3": {
+      "T_k": "8/315=24/945",
+      "T_k_decimal": 0.025396825396825397,
+      "lb": 179,
+      "lb_decimal": 0.18941798941798943,
+      "proved": true,
+      "factor": 7.46
+    }
+  },
+  "conclusion": "FOR ALL 8505 pure-divisor branches (r3=0 by translation symmetry): Z_lb >= 179 >> 24. Therefore delta_k* >= 179/945 > 8/315 for k=1,2,3. QED."
+}
