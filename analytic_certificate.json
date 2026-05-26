@@ -1,0 +1,255 @@
+{
+  "title": "Analytic Obstruction Certificate: 3^inf * 5 * p, All p >= 7",
+  "method": "CRT Decomposition + Sum-of-Maxima Strict Union Bound",
+  "N_base": 135,
+  "step1_z135_sweep": {
+    "pure_divisors": [
+      3,
+      9,
+      27,
+      5
+    ],
+    "mixed_divisors": [
+      15,
+      45,
+      135
+    ],
+    "branches_checked": 1215,
+    "Z_135": 43,
+    "best_params": {
+      "r3": 0,
+      "r9": 1,
+      "r27": 4,
+      "r5": 0
+    },
+    "delta_base": 0.31851851851851853
+  },
+  "step2_K": {
+    "p_dep_factors": [
+      3,
+      5,
+      9,
+      15,
+      27,
+      45,
+      135
+    ],
+    "breakdown": {
+      "3": 45,
+      "5": 27,
+      "9": 15,
+      "15": 9,
+      "27": 5,
+      "45": 3,
+      "135": 1
+    },
+    "K": 105
+  },
+  "step3_crossover": {
+    "inequality": "p > (108 + 43) / (43 - 3)",
+    "threshold": 3.775,
+    "analytic_P": 5,
+    "conclusion": "All primes p >= 5 proved analytically; since 5 < 7, no gap-fill needed."
+  },
+  "step4_verification": [
+    {
+      "p": 7,
+      "lb_frac": "17/105",
+      "lb_float": 0.1619047619047619,
+      "Mp_frac": "8/315",
+      "Mp_float": 0.025396825396825397,
+      "factor": 6.375,
+      "proved": true
+    },
+    {
+      "p": 11,
+      "lb_frac": "65/297",
+      "lb_float": 0.21885521885521886,
+      "Mp_frac": "4/165",
+      "Mp_float": 0.024242424242424242,
+      "factor": 9.0278,
+      "proved": true
+    },
+    {
+      "p": 13,
+      "lb_frac": "137/585",
+      "lb_float": 0.2341880341880342,
+      "Mp_frac": "14/585",
+      "Mp_float": 0.023931623931623933,
+      "factor": 9.7857,
+      "proved": true
+    },
+    {
+      "p": 17,
+      "lb_frac": "583/2295",
+      "lb_float": 0.2540305010893246,
+      "Mp_frac": "2/85",
+      "Mp_float": 0.023529411764705882,
+      "factor": 10.7963,
+      "proved": true
+    },
+    {
+      "p": 19,
+      "lb_frac": "223/855",
+      "lb_float": 0.2608187134502924,
+      "Mp_frac": "4/171",
+      "Mp_float": 0.023391812865497075,
+      "factor": 11.15,
+      "proved": true
+    },
+    {
+      "p": 23,
+      "lb_frac": "841/3105",
+      "lb_float": 0.27085346215781,
+      "Mp_frac": "8/345",
+      "Mp_float": 0.02318840579710145,
+      "factor": 11.6806,
+      "proved": true
+    },
+    {
+      "p": 29,
+      "lb_frac": "1099/3915",
+      "lb_float": 0.2807151979565773,
+      "Mp_frac": "2/87",
+      "Mp_float": 0.022988505747126436,
+      "factor": 12.2111,
+      "proved": true
+    },
+    {
+      "p": 31,
+      "lb_frac": "79/279",
+      "lb_float": 0.2831541218637993,
+      "Mp_frac": "32/1395",
+      "Mp_float": 0.022939068100358423,
+      "factor": 12.3438,
+      "proved": true
+    },
+    {
+      "p": 37,
+      "lb_frac": "13/45",
+      "lb_float": 0.28888888888888886,
+      "Mp_frac": "38/1665",
+      "Mp_float": 0.022822822822822823,
+      "factor": 12.6579,
+      "proved": true
+    },
+    {
+      "p": 41,
+      "lb_frac": "323/1107",
+      "lb_float": 0.2917795844625113,
+      "Mp_frac": "14/615",
+      "Mp_float": 0.022764227642276424,
+      "factor": 12.8175,
+      "proved": true
+    },
+    {
+      "p": 43,
+      "lb_frac": "63/215",
+      "lb_float": 0.2930232558139535,
+      "Mp_frac": "44/1935",
+      "Mp_float": 0.022739018087855296,
+      "factor": 12.8864,
+      "proved": true
+    },
+    {
+      "p": 47,
+      "lb_frac": "1873/6345",
+      "lb_float": 0.29519306540583135,
+      "Mp_frac": "16/705",
+      "Mp_float": 0.02269503546099291,
+      "factor": 13.0069,
+      "proved": true
+    },
+    {
+      "p": 53,
+      "lb_frac": "2131/7155",
+      "lb_float": 0.29783368273934313,
+      "Mp_frac": "6/265",
+      "Mp_float": 0.022641509433962263,
+      "factor": 13.1543,
+      "proved": true
+    },
+    {
+      "p": 59,
+      "lb_frac": "2389/7965",
+      "lb_float": 0.2999372253609542,
+      "Mp_frac": "4/177",
+      "Mp_float": 0.022598870056497175,
+      "factor": 13.2722,
+      "proved": true
+    },
+    {
+      "p": 61,
+      "lb_frac": "55/183",
+      "lb_float": 0.3005464480874317,
+      "Mp_frac": "62/2745",
+      "Mp_float": 0.022586520947176687,
+      "factor": 13.3065,
+      "proved": true
+    },
+    {
+      "p": 67,
+      "lb_frac": "911/3015",
+      "lb_float": 0.3021558872305141,
+      "Mp_frac": "68/3015",
+      "Mp_float": 0.022553897180762852,
+      "factor": 13.3971,
+      "proved": true
+    },
+    {
+      "p": 71,
+      "lb_frac": "581/1917",
+      "lb_float": 0.3030777256129369,
+      "Mp_frac": "8/355",
+      "Mp_float": 0.022535211267605635,
+      "factor": 13.4491,
+      "proved": true
+    },
+    {
+      "p": 73,
+      "lb_frac": "997/3285",
+      "lb_float": 0.3035007610350076,
+      "Mp_frac": "74/3285",
+      "Mp_float": 0.022526636225266364,
+      "factor": 13.473,
+      "proved": true
+    },
+    {
+      "p": 79,
+      "lb_frac": "361/1185",
+      "lb_float": 0.30464135021097044,
+      "Mp_frac": "16/711",
+      "Mp_float": 0.02250351617440225,
+      "factor": 13.5375,
+      "proved": true
+    },
+    {
+      "p": 83,
+      "lb_frac": "3421/11205",
+      "lb_float": 0.305310129406515,
+      "Mp_frac": "28/1245",
+      "Mp_float": 0.02248995983935743,
+      "factor": 13.5754,
+      "proved": true
+    },
+    {
+      "p": 89,
+      "lb_frac": "3679/12015",
+      "lb_float": 0.306200582605077,
+      "Mp_frac": "2/89",
+      "Mp_float": 0.02247191011235955,
+      "factor": 13.6259,
+      "proved": true
+    },
+    {
+      "p": 97,
+      "lb_frac": "149/485",
+      "lb_float": 0.30721649484536084,
+      "Mp_frac": "98/4365",
+      "Mp_float": 0.02245131729667812,
+      "factor": 13.6837,
+      "proved": true
+    }
+  ],
+  "conclusion": "The 3^inf * 5 * p tower admits no odd covering system for any prime p >= 7. QED."
+}
